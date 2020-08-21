@@ -8,7 +8,11 @@ this project clones well-known websites' user interface & interactions only usin
     - mobile ❌
     - pc ✅
   - Interaction ❌
-- google search results.
+- google search results
+  - UI ❌
+    - mobile ❌
+    - pc ❌
+  - Interaction ❌
 
 ## Facebook
 
