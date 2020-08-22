@@ -1,0 +1,216 @@
+body {
+    font-size:14px;
+}
+
+:root {
+    --main--color:#00e769;
+    --background--grey:#eff2f8;
+}
+
+.naver-button {
+    color:var(--main--color);
+}
+
+.naver-button.basic{
+    /* color:var(--main--color); */
+    color:white;
+}
+
+.naver-button.icon {
+    background:red;
+}
+
+.naver-main-container {
+    padding-top:100px;
+    max-width:700px;
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.naver-logo {
+    margin-bottom:35px;
+}
+
+.naver-logo img{
+    width:220px;
+    height:40px;
+}
+
+
+/** input관련 스타일링 */
+.naver-input {
+    overflow:hidden;
+    width:100%;
+    height:27px;
+    margin-bottom:35px;
+    border: solid 1px #0bde8b;
+    border-radius:10px;
+    padding: 14px 13px 18px 18px;
+}
+
+.naver-input input{
+    width:100%;
+    height:100%;
+    outline:none;
+    border:none;
+    font-weight:bolder;
+    font-size:20px;
+}
+
+.naver-input input::placeholder{
+    font-weight:lighter;
+    font-size:20px;
+}
+
+
+.naver-input-extended {
+    /** 서치바 내 이미지 / form 엘리먼트 위치 조정 */
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    position:relative;
+    overflow:hidden;
+    /* margin-bottom:35px; */
+    border-bottom: solid 1px var(--main--color);
+    box-sizing: border-box;
+    
+    padding:17px 0px 16px 0;
+    width:100%;
+
+}
+
+.naver-input-extended input{
+    width:100%;
+    height:100%;
+    outline:none;
+    border:none;
+    font-weight:bolder;
+    font-size:20px;
+    height:27px;
+    flex:1;
+}
+
+.naver-input-extended input::placeholder{
+    font-weight:200;
+    color:lightgray;
+    font-size:1.2rem;
+}
+
+
+
+.naver-input-extended .padding-image {
+    padding:0 14px;
+}
+
+.naver-input-extended .padding-image img {
+    width:20px;
+    height:20px;
+}
+
+
+
+
+
+.hidden-search-area {
+    position: absolute;
+    top:0;
+    right:0;
+    width:100%;
+    height:100vh;
+    z-index:100;
+    background:white;
+    display:none;
+}
+
+.hidden-search-area.active {
+    display:block;
+}
+
+
+.hidden-search-area-input {
+    position:relative;
+    flex:1;
+}
+
+.naver-apps-grid-container {
+
+    user-select:none;
+    display:grid;
+    grid-gap:1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style:none;
+    justify-items: center;
+    align-items:center;
+    text-align: center;
+    width:100%;
+    min-width:500px;
+    flex-basis:500px;
+}
+
+.naver-apps-grid-element {
+    cursor:pointer;
+}
+
+
+
+/** 네이버 앱 관련 스타일 */ 
+
+.app-icons {
+    position:relative;
+    height:50px;
+    width:50px;
+    background-color:#F5F6FA;
+    border-radius:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-icons img { 
+    width:28px;
+    height:28px;
+    overflow:hidden;
+    border: 1px solid #F4F6FA;
+    border-radius: 9px;
+}
+
+.app-title { 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    padding-top: 5px;
+    letter-spacing: -.7px;
+    color: #676c6f;
+}
+
+.dots {
+    position:absolute;
+    top:50%;
+    right:0;
+    left:0;
+    transform:translateY(-50%);
+    font-size:0;
+    height:5px;
+}
+
+.dots .dot {
+    width:5px;
+    border-radius:5px;
+    background-color: #d7dfe8;
+    margin-right: 3px;
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.dots .dot:nth-child(3){
+    margin-right:0px;
+}
