@@ -19,3 +19,9 @@ this project clones well-known websites' user interface & interactions only usin
 ## Naver
 
 ## KickStarter
+
+- JQuery
+- Typescript
+- React
+- AngularJs
+- Vue.js
