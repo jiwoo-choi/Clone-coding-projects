@@ -1,6 +1,8 @@
 # Clone-coding-project
 
-this project clones well-known websites' user interface & interactions only using pure html5 + js + css.
+this project clones well-known websites' user interface & interactions 
+
+# Pure html5 + js + css
 
 ## Google
 - google main page.
@@ -25,3 +27,11 @@ this project clones well-known websites' user interface & interactions only usin
 - React
 - AngularJs
 - Vue.js
+
+
+# Vue.js
+
+## Velog
+- main page
+  - UI ❌
+  
